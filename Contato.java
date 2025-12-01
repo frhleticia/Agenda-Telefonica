@@ -1,8 +1,11 @@
-public class Contato {
-    protected String nome;
-    protected long numero;
+package POO.AgendaTelefonica;
+import java.util.ArrayList;
 
-    public Contato(String nome, long numero) {
+public class Contato {
+    private String nome;
+    private String numero;
+
+    public Contato(String nome, String numero) {
         this.nome = nome;
         this.numero = numero;
     }
@@ -14,16 +17,14 @@ public class Contato {
         this.nome = nome;
     }
 
-    public long getNumero() {
+    public String getNumero() {
         return numero;
     }
-    public void setNumero(long numero) {
+    public void setNumero(String numero) {
         this.numero = numero;
     }
 
     public void mostrarContato(){
-        System.out.println("Nome: " + this.nome);
-        System.out.println("Telefone: " + this.numero);
-
+        System.out.println("Nome: " + this.getNome() + "\nContato: " + this.getNumero());
     }
 }
