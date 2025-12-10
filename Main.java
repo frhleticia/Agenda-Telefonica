@@ -16,5 +16,7 @@ public class Main {
 
     agendaDaLe.removerContato(irmao);
     agendaDaLe.mostrarAgenda();
+
+    irma.mostrarContato();
    }
 }
